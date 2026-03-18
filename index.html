@@ -1,22 +1,46 @@
 <!doctype html>
-<html lang="Es-es">
+<html lang="es-ES">
   <head>
-    <title>EnebaShop</title>
+    <title>EnebaShop | Tu proxima aventura</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <header>
       <h1>ENEBA</h1>
-      <div>
-        <input type="text" placeholder="Buscar" />
-      </div>
-      <button>Buscar</button>
-      <button>Tienda</button>
-      <button>🛒</button>
+      <form role="search">
+        <input
+          type="search"
+          placeholder="Buscar juegos, suscripciones..."
+          aria-label="Buscar"
+        />
+        <button type="submit">Buscar</button>
+      </form>
+      <nav>
+        <button>Tienda</button>
+        <button aria-label="Carrito de compras">🛒</button>
+      </nav>
     </header>
-    <main></main>
+
+    <main>
+      <article>
+        <section>
+          <h2>Descubre tu próxima aventura</h2>
+          <p>
+            <strong>Miles de juegos</strong> para PC, PlayStation, Xbox y
+            Nintendo a precios increíbles.
+          </p>
+          <button>Explorar la tienda</button>
+          <img
+            src="https://www.mensjournal.com/.image/t_share/NDI6MDAwMDAwMDAxMDE4ODg3/resident-evil-requiem-key-art.jpg"
+            alt="Arte conceptual de Resident Evil"
+          />
+        </section>
+      </article>
+    </main>
+
     <footer>
-      <p>&#169;2026 Eneba replication page. Final Project LM</p>
+      <p>&copy; 2026 Eneba replication page. Final Project LM</p>
     </footer>
   </body>
 </html>
