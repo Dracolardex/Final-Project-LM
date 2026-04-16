@@ -1,10 +1,12 @@
 <!doctype html>
 <html lang="es-ES">
   <head>
-    <title>EnebaShop | Tu proxima aventura</title>
+    <title>EnebaShop | Tu próxima aventura</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header>
       <h1>ENEBA</h1>
@@ -21,10 +23,11 @@
         <button aria-label="Carrito de compras">🛒</button>
       </nav>
     </header>
+
     <main>
       <article>
         <section>
-          <h1>Descubre tu próxima aventura</h2>
+          <h1>Descubre tu próxima aventura</h1>
           <p>
             <strong>Miles de juegos</strong> para PC, PlayStation, Xbox y
             Nintendo a precios increíbles.
@@ -35,24 +38,93 @@
             alt="Arte conceptual de Resident Evil"
           />
         </section>
-        <section>
-          <h2>Categorías populares</h3>
-          <button>🎮​​ PC Games</button>
-          <button>​​🔵​ Play Station</button>
-          <button>​​🟢​ Xbox</button>
-          <button>​​🔴​ Nintendo</button>
-        </section>
-        <section>
-          <h2>Ofertas destacadas</h2>
-          <div class="container">
-            <div class="game1">
-              
-            </div>
 
+        <section>
+          <h1>Categorías populares</h1>
+          <div class="category-list">
+            <button>🎮 PC Games</button>
+            <button>🔵 Play Station</button>
+            <button>🟢 Xbox</button>
+            <button>🔴 Nintendo</button>
+          </div>
+        </section>
+
+        <section class="seccion-ofertas">
+          <h1>Ofertas destacadas</h1>
+
+          <div class="ofertas-grid">
+            <article class="card">
+              <div class="card-image">
+                <img
+                  src="https://i.3djuegos.com/juegos/3569/god_of_war/fotos/ficha/god_of_war-2736533.webp"
+                  alt="God of War"
+                />
+              </div>
+              <div class="card-content">
+                <h3>God of War</h3>
+                <div class="price-container">
+                  <span class="old-price">69,99€</span>
+                  <span class="discount-badge">-45%</span>
+                </div>
+                <p class="final-price">38,49€</p>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-image">
+                <img
+                  src="https://i.3djuegos.com/juegos/19576/leyendas_pok__mon_za/fotos/ficha/leyendas_pok__mon_za-5987238.jpg"
+                  alt="Pokemon"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Pokémon Z-A</h3>
+                <div class="price-container">
+                  <span class="old-price">79,99€</span>
+                  <span class="discount-badge">-35%</span>
+                </div>
+                <p class="final-price">51,99€</p>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-image">
+                <img
+                  src="https://i0.wp.com/enderg.com/wp-content/uploads/2022/08/cyberpunk-2077-box-art-01-ps4-us-06jun19.jpg?fit=1200%2C1600&ssl=1"
+                  alt="Cyberpunk"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Cyberpunk 2077</h3>
+                <div class="price-container">
+                  <span class="old-price">59,99€</span>
+                  <span class="discount-badge">-60%</span>
+                </div>
+                <p class="final-price">23,99€</p>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-image">
+                <img
+                  src="https://m.media-amazon.com/images/I/81vTqGZ+37L._AC_SX342_SY445_QL70_ML2_.jpg"
+                  alt="Battlefield 4"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Battlefield 4</h3>
+                <div class="price-container">
+                  <span class="old-price">49,99€</span>
+                  <span class="discount-badge">-50%</span>
+                </div>
+                <p class="final-price">24,99€</p>
+              </div>
+            </article>
           </div>
         </section>
       </article>
     </main>
+
     <footer>
       <p>&copy; 2026 Eneba replication page. Final Project LM</p>
     </footer>
