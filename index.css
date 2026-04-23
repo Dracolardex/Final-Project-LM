@@ -14,6 +14,7 @@ header {
   background-color: royalblue;
   width: 100%;
   box-sizing: border-box;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 header h1 {
@@ -162,38 +163,129 @@ h1 {
   font-family: sans-serif;
 }
 
+.ofertas-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .category-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
-  gap: 20px; /* Espacio entre tarjetas */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
   padding: 20px 40px;
 }
 
 .category-list button {
-  background-color: royalblue; /* Gris oscuro azulado similar a la imagen */
+  background-color: royalblue;
   color: white;
   border: none;
-  border-radius: 12px; /* Bordes redondeados */
-  padding: 30px 20px; /* Más alto para que parezca una tarjeta */
+  border-radius: 12px;
+  padding: 30px 20px;
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
   display: flex;
-  align-items: center; /* Centra icono y texto verticalmente */
-  justify-content: center; /* Centra icono y texto horizontalmente */
-  gap: 10px; /* Espacio entre el emoji y el texto */
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   transition:
     background 0.3s,
     transform 0.2s;
 }
 
-/* Efecto al pasar el ratón */
 .category-list button:hover {
-  background-color: dodgerblue; /* Se aclara un poco */
-  transform: translateY(-5px); /* Pequeña elevación */
+  background-color: dodgerblue;
+  transform: translateY(-5px);
 }
 
-/* Efecto de clic que ya teníamos */
 .category-list button:active {
   transform: scale(0.95);
+}
+
+.card {
+  background-color: royalblue;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  color: white;
+}
+
+.card-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+}
+
+.discount-badge {
+  background-color: #ffcc00;
+  color: black;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.final-price {
+  color: greenyellow;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 40px 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+footer p {
+  color: #888;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
 }
